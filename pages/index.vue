@@ -1,7 +1,7 @@
 <template>
-
+ 
 <SfBanner
-      class="app-banner desktop-only"     
+      class="app-banner desktop-only container"     
       title="Summer Collection 2019" 
       subtitle="Colorful summer dresses are already in store"
       image="https://storybook.storefrontui.io/assets/storybook/SfHero/hero.png"
@@ -58,12 +58,14 @@
         </template>
       </SfBannerGrid> -->
         </div>         
-    </SfBanner>    
+    </SfBanner>   
+    
 </template>
 
 <script>
 import { SfHeader,SfMenuItem,SfBannerGrid,SfBanner} from '@storefront-ui/vue';
 import Stack from "../plugins/entry";
+import "../assets/Css/style.css";
 // import About from "../components/About";
 // import Contact from "../components/Contact";
 // import Portfolio from "../components/Portfolio";
@@ -93,3 +95,5 @@ export default {
   layout: "Layout",
 };
 </script>
+
+

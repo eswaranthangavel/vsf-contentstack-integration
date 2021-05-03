@@ -1,0 +1,16 @@
+
+.UiCard {
+  overflow: hidden;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.container {
+  padding: 0rem 2em;
+}
+
+.sf-banner {
+    background-size: auto !important;   
+    background-size: auto !important; 
+}

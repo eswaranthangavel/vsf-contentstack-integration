@@ -9,9 +9,9 @@
               <SfMenuItem :label="ilink.title"/>
             </SfListItem>
           </SfList>
-          <!-- <div v-else class="sb-footer__social">
+          <div v-else class="sb-footer__social">
             <SfImage v-for="picture in column.pictures" :key="picture" width="12" height="12" :src="'/assets/storybook/SfFooter/'+picture+'.svg'" class="sb-social-icon"/>
-          </div> -->
+          </div>
         </SfFooterColumn>
       </SfFooter>
 </template>

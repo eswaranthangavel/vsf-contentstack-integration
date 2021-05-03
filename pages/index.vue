@@ -1,13 +1,13 @@
 <template>
  
 <SfBanner
-      class="app-banner desktop-only container"     
+      class="desktop-only container"     
       title="Summer Collection 2019" 
       subtitle="Colorful summer dresses are already in store"
       image="https://storybook.storefrontui.io/assets/storybook/SfHero/hero.png"
     >
     <div>  
-        <SfHeader
+        <!-- <SfHeader
           :class="customClass"
           :title="title"
           :logo="logo"
@@ -31,12 +31,15 @@
             v-for="item in navigation"
             :key="item">
             <template slot="desktop-navigation-item">
-              <SfLink href="#">{{items}}</SfLink>
+              <SfLink href="#">{{item}}</SfLink>
             </template>
           </SfHeaderNavigationItem>
         </template>
-      </SfHeader> 
+      </SfHeader>  -->
       </div> 
+      <div style="display: flex; align-items: center; justify-content: center; height: 155vh; background-color: #f2f2f2;">
+        [page content]
+      </div>
       <div>
         <!-- <SfBannerGrid
         :banner-grid="bannerGrid"
@@ -61,6 +64,7 @@
     </SfBanner>   
     
 </template>
+
 
 <script>
 import { SfHeader,SfMenuItem,SfBannerGrid,SfBanner} from '@storefront-ui/vue';

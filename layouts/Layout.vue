@@ -12,9 +12,10 @@ import { mapState } from "vuex";
 // import myHeader from "../components/Header";
 // import customHeader from "../components/customHeader";
 import myFooter from "../components/Footer";
+import myheader from "../components/header";
 export default {
   components: {
-   
+   myheader,
     myFooter,
     
   },

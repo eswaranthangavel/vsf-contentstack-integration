@@ -4,7 +4,7 @@
         :active="activePage"
         @click:change="activePage = $event"
     >
-      <template #menu-item="{ updatePage, page, active }">
+      <template #menu-item="{ updatePage, page}">
         <button @click="updatePage(page.title)">{{page.title}}</button>
       </template>
       <SfContentPage v-for="(page, key) in pages" :key="page.title+key" :title="page.title">

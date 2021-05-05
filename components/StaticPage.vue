@@ -14,6 +14,7 @@
         <p v-else :style="{padding: '1.25rem 0'}">{{page.content}}}}</p>
       </SfContentPage>
     </SfContentPages>
+   
 </template>
 <script>
 import { SfContentPages, SfTabs } from "@storefront-ui/vue";
@@ -22,7 +23,10 @@ export default {
      SfContentPages,
      SfTabs,
   },
-  props:["static page"]  
+  props:[{
+            title: "About us",
+            items: ["Who we are", "Quality in the details", "Customer Reviews"],
+          }]  
 };
 
 </script>

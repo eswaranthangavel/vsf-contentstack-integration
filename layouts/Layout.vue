@@ -1,10 +1,10 @@
 <template>
   <div v-if="entry">
-    
     <!-- <myHeader v-if="this.entry.url === '/'" :header="this.entry.header[0]" />
     <customHeader v-else :header="this.entry.header[0]"></customHeader> -->
     <nuxt />
     <myheader/>
+    <!-- <myfirstpage nuxt:link v-if="this.entry.url==='/help'" :header="this.entry.header[0]"/> -->
     <myFooter :links_group="this.entry.links_group" />
   </div>
 </template>
@@ -15,6 +15,7 @@ import { mapState } from "vuex";
 // import customHeader from "../components/customHeader";
 import myFooter from "../components/Footer";
 import myheader from "../components/customBody";
+
 export default {
   components: {
    myheader,

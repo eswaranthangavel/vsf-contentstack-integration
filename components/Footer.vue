@@ -1,8 +1,6 @@
 <template>
-  <SfFooter      
-        
-        class="sb-footer"
-      >
+  <SfFooter  
+        class="sb-footer" >
         <SfFooterColumn v-for="glink in links_group" :key="glink.static_links_title" :title="glink.static_links_title">        
           <SfList v-if="glink.static_link">
             <SfListItem v-for="ilink in glink.static_link" :key="ilink.title">

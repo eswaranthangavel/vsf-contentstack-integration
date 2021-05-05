@@ -2,8 +2,7 @@
     <SfContentPages
         :title="title"
         :active="activePage"
-        @click:change="activePage = $event"
-    >
+        @click:change="activePage = $event">
       <template #menu-item="{ updatePage, page}">
         <button @click="updatePage(page.title)">{{page.title}}</button>
       </template>
@@ -14,6 +13,7 @@
         <p v-else :style="{padding: '1.25rem 0'}">{{page.content}}}}</p>
       </SfContentPage>
     </SfContentPages>
+    
    
 </template>
 <script>

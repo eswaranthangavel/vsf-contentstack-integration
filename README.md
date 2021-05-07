@@ -4,14 +4,12 @@
 
 ```bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # build for production and launch server
-$ npm run build
-$ npm run dev
+$ yarn build
+$ yarn dev
 
-# generate static project
-$ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

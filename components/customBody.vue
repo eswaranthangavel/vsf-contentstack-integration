@@ -30,7 +30,7 @@ export default {
    SfHeader,
    SfSection,
   },
-     props: ["About us"],
+     props: ["instagramFeed"],
   
 };
 </script>

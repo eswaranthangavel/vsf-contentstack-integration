@@ -1,5 +1,6 @@
 <template>
  
+
 <SfBanner
       class="desktop-only container"     
       title="Colorful summer dresses are already in store" 
@@ -33,13 +34,14 @@ export default {
    },
   async asyncData({ store }) {
     const res = await Stack.getEntry("footer_static_content");
-    const staticpage=await Stack.getEntry("static_page_block");
+   // const staticpage=await Stack.getEntry("static_page_block");
     //let blogRes = await Stack.getEntry("blog_posts");
     //store.commit("setBlogList", blogRes);
     //blogRes = blogRes.filter((obj) => obj.url === "/blog-list");
     store.commit("setEntries", res[0]);
-    console.log(res[0],'testlog');
-    console.log(staticpage[0],'staticpage');
+    //store.commit("setEntries", staticpage);
+    //console.log(staticpage,'testlog 1');
+    // console.log(staticpage[0],'staticpage');
     //store.commit("setFilter", res[0].portfolio.portfolo_details);
 
     return { data: res[0] };

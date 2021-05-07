@@ -3,16 +3,18 @@
         
         class="sb-footer"
       >
-        <SfFooterColumn v-for="glink in links_group" :key="glink.static_links_title" :title="glink.static_links_title">        
+        <SfFooterColumn v-for="glink in data.links_group" :key="glink.static_links_title" :title="glink.static_links_title">        
           <SfList v-if="glink.static_link">
             <SfListItem v-for="ilink in glink.static_link" :key="ilink.title">
               <SfMenuItem :label="ilink.title"/>
             </SfListItem>
-          </SfList>
-          <div v-else class="sb-footer__social">
-            <SfImage v-for="picture in column.pictures" :key="picture" width="12" height="12" :src="'/assets/storybook/SfFooter/'+picture+'.svg'" class="sb-social-icon"/>
-          </div>
+          </SfList>                   
         </SfFooterColumn>
+         <SfFooterColumn title="Social">
+      <div class="footer__socials">
+        <SfImage class="footer__social-image" v-for="item in data.social_follow.social_media_platform" :key="item.follow_link.title" :src="'/icons/'+item.follow_link.title+'.svg'" :alt="item.follow_link.title" width="32" height="32" />
+      </div>
+    </SfFooterColumn>
       </SfFooter>
 </template>
 
@@ -25,7 +27,7 @@ export default {
     SfImage,
     SfMenuItem
   },
-     props: ['links_group'],
+     props: ['data'],
   
 };
 </script>

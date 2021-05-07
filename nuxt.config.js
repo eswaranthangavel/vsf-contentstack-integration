@@ -19,7 +19,23 @@ export default {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ]
     },
-
+    router: {
+        extendRoutes(routes, resolve) {
+            routes.push({
+                name: 'help',
+                path: '/',
+                component: resolve(__dirname, 'pages/help.vue')
+            })
+        },
+        // middleware: ['checkout'],
+        // scrollBehavior(_to, _from, savedPosition) {
+        //     if (savedPosition) {
+        //         return savedPosition;
+        //     } else {
+        //         return { x: 0, y: 0 };
+        //     }
+        // }
+    },
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: ["@storefront-ui/vue/styles.scss"],
 

@@ -5,7 +5,7 @@
     <customHeader v-else :header="this.entry.header[0]"></customHeader> -->
     <nuxt />
     <myheader/>
-    <myFooter :links_group="this.entry.links_group" />
+    <myFooter :data="this.entry" />
   </div>
 </template>
 

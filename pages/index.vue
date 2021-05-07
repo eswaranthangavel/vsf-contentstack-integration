@@ -33,19 +33,19 @@ export default {
    },
   async asyncData({ store }) {
     const res = await Stack.getEntry("footer_static_content");
-    const staticpage=await Stack.getEntry("static_page_block");
-    let blogRes = await Stack.getEntry("static_page");
-    //store.commit("setBlogList", blogRes);
+    //const staticpage=await Stack.getEntry("static_page_block");
+    let blogRes = await Stack.getEntry("static_page_block");
+    store.commit("setBlogList", blogRes);
     //blogRes = blogRes.filter((obj) => obj.url === "/help");
     store.commit("setEntries", res[0]);
-    //console.log(res[0],'testlog');
+    console.log(res[0],'testlog');
     //console.log(staticpage,'staticpage');
     console.log(blogRes,'blogRes');
     //console.log(staticpage[1],'staticpage1');
     //console.log(staticpage[2],'staticpage2');   
     //store.commit("setFilter", res[0].portfolio.portfolo_details);
 
-    return { data: res[0] };
+    return { data: res[0],blogRes };
   },
   layout: "Layout",
 };

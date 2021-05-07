@@ -10,7 +10,6 @@
 <script>
 import { SfHeader,SfMenuItem,SfBannerGrid,SfBanner} from '@storefront-ui/vue';
 import Stack from "../plugins/entry";
-import "../assets/Css/style.scss";
 export default {
    components: {     
      SfMenuItem,
@@ -26,3 +25,22 @@ export default {
   layout: "Layout",
 };
 </script>
+<style>
+
+.UiCard {
+  overflow: hidden;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.container {
+  padding: 0rem 2em;
+}
+
+.sf-banner {
+  background-size: auto !important;   
+  background-size: auto !important; 
+  --banner-background-position: 90% !important;
+}
+</style>

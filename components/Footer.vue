@@ -27,5 +27,11 @@ export default {
      props: ['data'],  
 };
 </script>
+<style>
+.footer__socials{
+    display: flex;
+    justify-content: space-around;
+}
+</style>
 
 

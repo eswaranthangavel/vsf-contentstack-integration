@@ -44,7 +44,7 @@ export default {
     // console.log(staticpage[0],'staticpage');
     //store.commit("setFilter", res[0].portfolio.portfolo_details);
 
-    return { data: res[0],blogRes };
+    return { data: res[0] };
   },
   layout: "Layout",
 };

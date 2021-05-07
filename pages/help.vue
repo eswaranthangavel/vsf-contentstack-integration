@@ -6,7 +6,21 @@
           {{litem.description}}
         </SfTab>       
       </SfTabs>
-    </SfContentPage>    
+    </SfContentPage>   
+    <SfContentPage title="Customer service">
+    </SfContentPage>
+     <SfContentPage title="Store locator">
+        </SfContentPage>
+        <SfContentPage title="Delivery">
+        </SfContentPage>
+        <SfContentPage title="Return Policy">
+        </SfContentPage>
+        <SfContentPage title="Privacy Policy">
+        </SfContentPage>
+        <SfContentPage title="Size Guide">
+        </SfContentPage>
+        <SfContentPage title="Contact Us">
+        </SfContentPage> 
   </SfContentPages>
 </template>
 

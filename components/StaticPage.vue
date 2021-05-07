@@ -2,9 +2,8 @@
     <SfContentPages
         :title="title"
         :active="activePage"
-        @click:change="activePage = $event"
-    >
-      <template #menu-item="{ updatePage, page}">
+        @click:change="activePage = $event">
+      <template #menu-item="{ updatePage, page,active}">
         <button @click="updatePage(page.title)">{{page.title}}</button>
       </template>
       <SfContentPage v-for="(page, key) in pages" :key="page.title+key" :title="page.title">
@@ -14,6 +13,8 @@
         <p v-else :style="{padding: '1.25rem 0'}">{{page.content}}}}</p>
       </SfContentPage>
     </SfContentPages>
+    
+   
 </template>
 <script>
 import { SfContentPages, SfTabs } from "@storefront-ui/vue";
@@ -22,7 +23,10 @@ export default {
      SfContentPages,
      SfTabs,
   },
-  props:["static page"]  
+  props:[{
+            title: "About us",
+            items: ["Who we are", "Quality in the details", "Customer Reviews"],
+          }]  
 };
 
 </script>

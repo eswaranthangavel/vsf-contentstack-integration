@@ -6,11 +6,9 @@
           {{litem.description}}
         </SfTab>       
       </SfTabs>
-    </SfContentPage>
-    
+    </SfContentPage>    
   </SfContentPages>
 </template>
-
 
 <script>
 import { SfContentPages,SfTabs } from "@storefront-ui/vue";
@@ -23,6 +21,5 @@ export default {
     const staticpage=await Stack.getEntry("static_page_block");
     return { data: staticpage };
   },
-    }
-
+  }
 </script>

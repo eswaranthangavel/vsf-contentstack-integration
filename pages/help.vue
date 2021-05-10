@@ -2,12 +2,10 @@
   <SfContentPages title="Help" active="About us">
     <SfContentPage title="About us">
       <SfTabs >
-        <SfTab v-for="litem in data" :key="litem.title"  :title="litem.title">
-          <!-- {{litem.description}} -->
-          <!-- <div style="color:black" v-html=litem.description></div>-->
-          <p><span  v-html=litem.pretext></span></p>
-          <p><b><span  v-html=litem.sub_title></span></b></p>
-          <p><span  v-html=litem.description></span></p>
+        <SfTab v-for="litem in data" :key="litem.title"  :title="litem.title">        
+          <span v-if="litem.pretext !== null"  v-html=litem.pretext></span>
+          <br><br><h1><strong><span v-if="litem.sub_title !== null"  v-html=litem.sub_title></span></strong></h1><br>
+          <span v-if="litem.description !== null"  v-html=litem.description></span>
         </SfTab>       
       </SfTabs>
     </SfContentPage>   

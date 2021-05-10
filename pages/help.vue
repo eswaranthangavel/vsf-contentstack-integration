@@ -5,7 +5,9 @@
         <SfTab v-for="litem in data" :key="litem.title"  :title="litem.title">
           <!-- {{litem.description}} -->
           <!-- <div style="color:black" v-html=litem.description></div>-->
-          <span style="color:gray" v-html=litem.description></span>
+          <p><span  v-html=litem.pretext></span></p>
+          <p><b><span  v-html=litem.sub_title></span></b></p>
+          <p><span  v-html=litem.description></span></p>
         </SfTab>       
       </SfTabs>
     </SfContentPage>   

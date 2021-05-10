@@ -3,7 +3,9 @@
     <SfContentPage title="About us">
       <SfTabs >
         <SfTab v-for="litem in data" :key="litem.title"  :title="litem.title">
-          {{litem.description}}
+          <!-- {{litem.description}} -->
+          <!-- <div style="color:black" v-html=litem.description></div>-->
+          <span style="color:gray" v-html=litem.description></span>
         </SfTab>       
       </SfTabs>
     </SfContentPage>   
